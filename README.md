@@ -1,97 +1,112 @@
-# ♟️ Multiplayer Online Chess with AI (Java)
+♟️ Online Chess Game with AI (Java)
 
-## 📌 Project Overview
-This project is a **Java-based online chess platform** that supports:
-- Real-time **multiplayer gameplay** over TCP sockets.
-- An intelligent **AI opponent** using the **Minimax algorithm with Alpha-Beta Pruning**.
-- A clean **graphical user interface (GUI)** for smooth player interaction.
+An Online Chess Game with AI developed in Java using Object-Oriented Programming principles.
+The system supports player vs player and player vs AI gameplay, with an intelligent AI opponent powered by the Minimax algorithm with Alpha-Beta pruning.
 
-It combines **network programming, artificial intelligence, and object-oriented design** to deliver an interactive chess experience.
+🚀 Features
 
----
+Online / Multiplayer chess support (extendable using sockets)
 
-## 🛠 Features
-- ✅ **Real-Time Multiplayer**: Built with **TCP sockets** and a **client-server architecture**.  
-- ✅ **AI Opponent**: Implements **Minimax + Alpha-Beta Pruning** for efficient decision-making.  
-- ✅ **Move Validation**: Ensures legal moves, check, and checkmate detection.  
-- ✅ **Multithreading**: Handles multiple clients simultaneously with minimal latency.  
-- ✅ **User Interface**: Intuitive **Java Swing/JavaFX** GUI for seamless gameplay.  
-- ✅ **Cross-Platform**: Runs on any OS with Java installed.  
+AI opponent using Minimax + Alpha-Beta pruning
 
----
+Valid chess move enforcement
 
-## ⚙️ Technologies Used
-- **Programming Language**: Java (Core + OOPs)  
-- **Networking**: TCP Sockets  
-- **Concurrency**: Multithreading  
-- **AI**: Minimax Algorithm with Alpha-Beta Pruning  
-- **GUI**: Java Swing / JavaFX  
+Game state management (turns, captures)
 
----
+Undo / Redo functionality
 
+Interactive board visualization (Swing-based)
 
----
+Modular and scalable design
 
-## 🚀 How It Works
-1. **Server Setup**  
-   - Run the **server application** to host the chess game.  
-   - Handles multiple players with **multithreading**.  
+🛠️ Technologies Used
 
-2. **Client Connection**  
-   - Players connect using the **client application**.  
-   - Communicates with server using **TCP sockets**.  
+Java
 
-3. **Gameplay**  
-   - Players take turns with move validation and rule enforcement.  
-   - AI opponent available when playing in single-player mode.  
-   - The game detects **check, checkmate, and stalemate** conditions.  
+Java Swing (GUI)
 
----
+OOP Concepts
 
-## 🔑 Key Algorithms
-### Minimax with Alpha-Beta Pruning
-- **Minimax** explores possible future moves for both players.  
-- **Alpha-Beta Pruning** reduces unnecessary computations, making the AI faster.  
-- Evaluates:
-  - Piece values
-  - Board control
-  - Checkmate conditions  
+Data Structures
 
----
+2D Arrays (Board)
 
-## 📊 Example Use-Cases
-- 🎮 **Play Online with Friends** using socket-based multiplayer.  
-- 🤖 **Practice Against AI** to sharpen chess skills.  
-- 🎓 **Educational Tool** to learn about:
-  - Socket programming  
-  - Multithreading  
-  - Artificial Intelligence (Minimax)  
-  - Object-Oriented Design in Java  
+Stack (Undo / Redo)
 
----
+Tree (AI decision-making)
 
-## 🏆 Achievements
-- Designed a **low-latency, real-time multiplayer system** using TCP sockets.  
-- Implemented **AI with Minimax + Alpha-Beta** for optimized gameplay.  
-- Created a **scalable client-server architecture** with multithreading.  
+Minimax Algorithm
 
----
+Alpha-Beta Pruning
 
-## 📚 Future Enhancements
-- Add **user authentication & profiles**.  
-- Implement **ranking system & leaderboards**.  
-- Support **chess puzzles & training modes**.  
-- Improve UI with animations and modern design.  
-- Deploy as a **web-based application** using Java frameworks.  
+📂 Project Structure
+ChessGame/
+└── src/
+    └── chess/
+        ├── Main.java
+        ├── Game.java
+        ├── Board.java
+        ├── Move.java
+        ├── Player.java
+        ├── AIPlayer.java
+        ├── Piece.java
+        ├── Pawn.java
+        ├── Rook.java
+        ├── Knight.java
+        ├── Bishop.java
+        ├── Queen.java
+        ├── King.java
+        ├── Color.java
+        └── ChessSwingUI.java
 
----
+🤖 AI Implementation
 
-## 👨‍💻 Author
-**Vinay Ghorpade**  
-Electronics & Telecommunication Engineering Student | Java Developer | AI & DSA Enthusiast  
+Uses Minimax Algorithm to evaluate possible game states
 
----
+Alpha-Beta pruning optimizes performance by eliminating unnecessary branches
 
+AI selects the best move based on board evaluation score
 
+▶️ How to Run
 
-## 📂 Project Structure
+Clone or download the repository
+
+Open the project in IntelliJ / Eclipse / VS Code
+
+Run Main.java
+
+The Swing-based Chess UI window will open
+
+Play against the AI or another player
+
+🧠 Key OOP Concepts Used
+
+Inheritance: Piece hierarchy (Pawn, Rook, etc.)
+
+Polymorphism: Move validation logic
+
+Encapsulation: Game state and board control
+
+Abstraction: AI decision logic
+
+💼 Resume Description
+
+Developed an Online Chess Game in Java with an AI opponent using Minimax and Alpha-Beta pruning, implementing OOP principles, move validation, undo/redo functionality, and an interactive Swing-based UI.
+
+🔮 Future Enhancements
+
+Full online multiplayer using Socket Programming
+
+Chess timers
+
+Advanced board evaluation
+
+Player ranking system
+
+Database-backed match history
+
+Mobile or web version
+
+📜 License
+
+This project is developed for educational and learning purposes.
